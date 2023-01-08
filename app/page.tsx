@@ -1,6 +1,10 @@
 import "./globals.css"
 
 export default function Home() {
+  function handleIntroAnimation(e: any) {
+    if (e === "frame")
+      document.getElementById("intro-lottie")!.style.display = "none"
+  }
   return (
     <main className="flex flex-col justify-center text-center">
       <h1 className="text-9xl">Luc Ledo</h1>
