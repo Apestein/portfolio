@@ -14,7 +14,7 @@ export default function RootLayout({
     <html>
       <head />
       <body className="grid min-h-screen grid-rows-[min-content_1fr] bg-black text-white">
-        <nav className="fixed flex w-full items-center justify-end gap-20 bg-indigo-900 p-2 text-xl">
+        <nav className="fixed flex w-full items-center justify-end gap-[5vw] bg-indigo-900 p-2 md:text-2xl">
           {/* <DarkModeToggle
             onChange={() => setDarkMode((prev) => !prev)}
             isDarkMode={darkMode}
@@ -22,7 +22,7 @@ export default function RootLayout({
           <DarkModeSwitch
             checked={darkMode}
             onChange={() => setDarkMode((prev) => !prev)}
-            className="h-10 w-10"
+            className="h-8 w-8"
           />
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
