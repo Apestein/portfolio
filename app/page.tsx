@@ -5,12 +5,9 @@ import waldoDemo from "../public/waldo-demo.webp"
 import shoppingDemo from "../public/shopping-cart-demo.webp"
 import battleshipDemo from "../public/battleship-demo.webp"
 import portfolioDemo from "../public/this.webp"
+import Contact from "../components/Contact"
 
 export default function Home() {
-  function handleIntroAnimation(e: any) {
-    if (e === "frame")
-      document.getElementById("intro-lottie")!.style.display = "none"
-  }
   return (
     <main className="flex flex-col px-3">
       <article className="grid min-h-screen place-content-center text-center">
@@ -121,7 +118,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      {/* <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="outline outline-1 outline-white md:max-w-[60vw]"
           src={portfolioDemo}
@@ -146,7 +143,8 @@ export default function Home() {
             <li>Vitest Testing</li>
           </ul>
         </aside>
-      </section>
+      </section> */}
+      <Contact />
     </main>
   )
 }

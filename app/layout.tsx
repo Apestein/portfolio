@@ -2,7 +2,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import { DarkModeSwitch } from "react-toggle-dark-mode"
-import { DarkModeToggle } from "react-dark-mode-toggle-2"
+import { FaGithub } from "react-icons/fa"
 
 export default function RootLayout({
   children,
@@ -15,10 +15,6 @@ export default function RootLayout({
       <head />
       <body className="grid min-h-screen grid-rows-[min-content_1fr] bg-black text-white">
         <nav className="fixed flex w-full items-center justify-end gap-[5vw] bg-indigo-900 p-2 md:text-2xl">
-          {/* <DarkModeToggle
-            onChange={() => setDarkMode((prev) => !prev)}
-            isDarkMode={darkMode}
-          /> */}
           <DarkModeSwitch
             checked={darkMode}
             onChange={() => setDarkMode((prev) => !prev)}
@@ -28,6 +24,12 @@ export default function RootLayout({
           <Link href="/blog">Blog</Link>
         </nav>
         {children}
+        <footer>
+          Copyright © 2022 Apestein
+          <FaGithub
+            onClick={() => window.open("https://github.com/Apestein", "_blank")}
+          />
+        </footer>
       </body>
     </html>
   )
