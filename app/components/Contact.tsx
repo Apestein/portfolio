@@ -5,10 +5,8 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 export default function Contact() {
   const form = useRef<any>()
-
   const sendEmail = (e: any) => {
     e.preventDefault()
-
     emailjs
       .sendForm(
         "service_usopb14",
@@ -27,12 +25,12 @@ export default function Contact() {
   }
 
   return (
-    <section className="flex items-center justify-around">
-      <article className="flex flex-col gap-5">
+    <section className="my-10 flex items-center justify-around">
+      <i className="flex flex-col gap-5">
         <FaLinkedin className="text-3xl" />
         <FaGithub className="text-3xl" />
         <FaEnvelope className="text-3xl" />
-      </article>
+      </i>
       <form
         className="flex w-1/2 flex-col gap-3 self-center rounded-md p-3 text-black outline outline-1 outline-amber-500"
         ref={form}
@@ -56,7 +54,7 @@ export default function Contact() {
           className="px-2 focus:outline-none"
           required
           name="message"
-          placeholder="Message"
+          placeholder="Send me an email by writing your message here"
         />
         <input className="bg-amber-500 text-white" type="submit" value="Send" />
       </form>

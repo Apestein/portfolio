@@ -10,10 +10,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const [darkMode, setDarkMode] = useState(true)
+  const darkClass = darkMode ? "dark" : ""
   return (
-    <html>
+    <html className={`${darkClass}`}>
       <head />
-      <body className="grid min-h-screen grid-rows-[min-content_1fr] bg-black text-white">
+      <body className="grid min-h-screen grid-rows-[min-content_1fr] dark:bg-black dark:text-white">
         <nav className="fixed flex w-full items-center justify-end gap-[5vw] bg-indigo-900 p-2 md:text-2xl">
           <DarkModeSwitch
             checked={darkMode}

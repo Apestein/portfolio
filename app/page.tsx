@@ -4,8 +4,8 @@ import discordDemo from "../public/discord-clone-demo.webp"
 import waldoDemo from "../public/waldo-demo.webp"
 import shoppingDemo from "../public/shopping-cart-demo.webp"
 import battleshipDemo from "../public/battleship-demo.webp"
-import portfolioDemo from "../public/this.webp"
-import Contact from "../components/Contact"
+import portfolioDemo from "../public/portfolio-demo.webp"
+import Contact from "./components/Contact"
 
 export default function Home() {
   return (
@@ -27,6 +27,7 @@ export default function Home() {
           className="md:max-w-[60vw]"
           src={discordDemo}
           alt="discord-demo"
+          placeholder="blur"
         />
         <aside className="grid grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Discord Clone</b>
@@ -50,7 +51,12 @@ export default function Home() {
         </aside>
       </section>
       <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
-        <Image className="md:max-w-[60vw]" src={waldoDemo} alt="waldo-demo" />
+        <Image
+          className="md:max-w-[60vw]"
+          src={waldoDemo}
+          alt="waldo-demo"
+          placeholder="blur"
+        />
         <aside className="grid grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Where's Waldo</b>
           <em className="underline">Features</em>
@@ -75,6 +81,7 @@ export default function Home() {
           className="md:max-w-[60vw]"
           src={shoppingDemo}
           alt="shopping-demo"
+          placeholder="blur"
         />
         <aside className="grid grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Shopping Cart</b>
@@ -101,6 +108,7 @@ export default function Home() {
           className="md:max-w-[60vw]"
           src={battleshipDemo}
           alt="battleship-demo"
+          placeholder="blur"
         />
         <aside className="grid grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Discord Clone</b>
@@ -118,11 +126,12 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      {/* <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="outline outline-1 outline-white md:max-w-[60vw]"
-          src={portfolioDemo}
+          src={battleshipDemo}
           alt="portfolio-demo"
+          placeholder="blur"
         />
         <aside className="grid grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">This Website</b>
@@ -143,7 +152,7 @@ export default function Home() {
             <li>Vitest Testing</li>
           </ul>
         </aside>
-      </section> */}
+      </section>
       <Contact />
     </main>
   )
