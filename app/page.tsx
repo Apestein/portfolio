@@ -5,11 +5,20 @@ import waldoDemo from "../public/waldo-demo.webp"
 import shoppingDemo from "../public/shopping-cart-demo.webp"
 import battleshipDemo from "../public/battleship-demo.webp"
 import portfolioDemo from "../public/portfolio-demo.webp"
-import Contact from "./components/Contact"
+import Contact from "./(components)/Contact"
+import Lottie from "lottie-react"
+import starryBg from "../public/starry-background.json"
+import StarryBg from "./(components)/StarryBg"
 
 export default function Home() {
   return (
     <main className="flex flex-col px-3">
+      {/* <Lottie
+        className="fixed right-0 -z-10 h-full"
+        animationData={starryBg}
+        loop={true}
+      /> */}
+      <StarryBg />
       <article className="grid min-h-screen place-content-center text-center">
         <h1 className="text-9xl">Luc Ledo</h1>
         <h2 className="mb-2 text-2xl italic">Fullstack Web Developer</h2>
@@ -29,7 +38,7 @@ export default function Home() {
           alt="discord-demo"
           placeholder="blur"
         />
-        <aside className="grid grid-cols-2 place-content-center text-center">
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Discord Clone</b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
@@ -57,7 +66,7 @@ export default function Home() {
           alt="waldo-demo"
           placeholder="blur"
         />
-        <aside className="grid grid-cols-2 place-content-center text-center">
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Where's Waldo</b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
@@ -83,7 +92,7 @@ export default function Home() {
           alt="shopping-demo"
           placeholder="blur"
         />
-        <aside className="grid grid-cols-2 place-content-center text-center">
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Shopping Cart</b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
@@ -110,7 +119,7 @@ export default function Home() {
           alt="battleship-demo"
           placeholder="blur"
         />
-        <aside className="grid grid-cols-2 place-content-center text-center">
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">Discord Clone</b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
@@ -133,7 +142,7 @@ export default function Home() {
           alt="portfolio-demo"
           placeholder="blur"
         />
-        <aside className="grid grid-cols-2 place-content-center text-center">
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center">This Website</b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>

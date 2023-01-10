@@ -15,19 +15,24 @@ export default function RootLayout({
     <html className={`${darkClass}`}>
       <head />
       <body className="grid min-h-screen grid-rows-[min-content_1fr] dark:bg-black dark:text-white">
-        <nav className="fixed flex w-full items-center justify-end gap-[5vw] bg-indigo-900 p-2 md:text-2xl">
+        <nav className="sticky top-0 flex w-full items-center justify-end gap-[5vw] py-4 px-10 md:text-2xl">
           <DarkModeSwitch
             checked={darkMode}
             onChange={() => setDarkMode((prev) => !prev)}
             className="h-8 w-8"
           />
-          <Link href="/">Home</Link>
-          <Link href="/blog">Blog</Link>
+          <Link href="/">
+            <span className="rainbow-text">Home</span>
+          </Link>
+          <Link href="/blog">
+            <span className="rainbow-text">Blog</span>
+          </Link>
         </nav>
         {children}
         <footer>
-          Copyright © 2022 Apestein
+          Copyright © 2023 Apestein
           <FaGithub
+            className="cursor-pointer"
             onClick={() => window.open("https://github.com/Apestein", "_blank")}
           />
         </footer>
