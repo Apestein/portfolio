@@ -33,6 +33,11 @@
     background-size: 400%;
     animation: gradient 5s linear infinite;
   }
+
+  .clamp-name {
+    font-size: clamp(3rem, 6vw, 10rem);
+    line-height: 1;
+  }
 }
 
 @keyframes gradient {
@@ -44,5 +49,16 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: fit-content;
   }
 }

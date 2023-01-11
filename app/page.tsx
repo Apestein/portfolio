@@ -1,4 +1,5 @@
-import "./globals.css"
+import "./globals.scss"
+import "./app.css"
 import Image from "next/image"
 import discordDemo from "../public/discord-clone-demo.webp"
 import waldoDemo from "../public/waldo-demo.webp"
@@ -6,18 +7,21 @@ import shoppingDemo from "../public/shopping-cart-demo.webp"
 import battleshipDemo from "../public/battleship-demo.webp"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
-import StarryBg from "./(components)/StarryBg"
 
 export default function Home() {
   return (
-    <main className="flex flex-col px-3">
-      <div className="fixed top-0 left-0 -z-10 xl:flex xl:w-full">
-        <StarryBg />
-        <StarryBg />
-        <StarryBg />
-      </div>
+    <main id="hero-container" className="flex flex-col px-3">
+      <div id="stars" className="-z-10"></div>
+      <div id="stars2" className="-z-10"></div>
+      <div id="stars3" className="-z-10"></div>
       <article className="grid min-h-screen place-content-center text-center">
-        <h1 className="text-9xl">Luc Ledo</h1>
+        <h1 className="clamp-name group flex justify-center gap-5">
+          <p>LUC </p>
+          <p className="w-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:w-[13ch] group-hover:opacity-100">
+            "DUMBFOUNDED"
+          </p>
+          <p>LEDO</p>
+        </h1>
         <h2 className="mb-2 text-2xl italic">Fullstack Web Developer</h2>
         <figure>
           <q>

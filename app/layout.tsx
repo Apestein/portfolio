@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html className={`${darkClass}`}>
       <head />
-      <body className="grid min-h-screen grid-rows-[min-content_1fr] dark:bg-black dark:text-white">
+      <body className="grid min-h-screen grid-rows-[min-content_1fr] font-mono dark:bg-black dark:text-white">
         <nav className="sticky top-0 flex w-full items-center justify-end gap-[5vw] px-10 pt-4 md:text-2xl">
           <DarkModeSwitch
             checked={darkMode}
