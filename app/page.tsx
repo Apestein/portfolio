@@ -6,19 +6,16 @@ import shoppingDemo from "../public/shopping-cart-demo.webp"
 import battleshipDemo from "../public/battleship-demo.webp"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
-import Lottie from "lottie-react"
-import starryBg from "../public/starry-background.json"
 import StarryBg from "./(components)/StarryBg"
 
 export default function Home() {
   return (
     <main className="flex flex-col px-3">
-      {/* <Lottie
-        className="fixed right-0 -z-10 h-full"
-        animationData={starryBg}
-        loop={true}
-      /> */}
-      <StarryBg />
+      <div className="fixed top-0 left-0 -z-10 xl:flex xl:w-full">
+        <StarryBg />
+        <StarryBg />
+        <StarryBg />
+      </div>
       <article className="grid min-h-screen place-content-center text-center">
         <h1 className="text-9xl">Luc Ledo</h1>
         <h2 className="mb-2 text-2xl italic">Fullstack Web Developer</h2>
