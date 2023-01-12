@@ -10,29 +10,27 @@ import Contact from "./(components)/Contact"
 
 export default function Home() {
   return (
-    <main id="hero-container" className="flex flex-col px-3">
+    <main id="hero-container" className="flex flex-col">
       <div id="stars" className="-z-10"></div>
       <div id="stars2" className="-z-10"></div>
       <div id="stars3" className="-z-10"></div>
-      <article className="grid min-h-screen place-content-center text-center">
-        <h1 className="clamp-name group flex justify-center gap-5">
+      <article className="text-drop-shadow grid min-h-screen place-content-center text-center text-neutral-500 dark:drop-shadow-none">
+        <h1 className="clamp-text dark:hover:text-glow group peer flex justify-center gap-[1.5vw] ">
           <p>LUC </p>
-          <p className="w-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:w-[13ch] group-hover:opacity-100">
+          <p className="w-0 overflow-hidden italic opacity-0 transition-all duration-500 sm:group-hover:w-[13ch] sm:group-hover:opacity-100">
             "DUMBFOUNDED"
           </p>
           <p>LEDO</p>
         </h1>
-        <h2 className="mb-2 text-2xl italic">Fullstack Web Developer</h2>
-        <figure>
-          <q>
-            "<span className="line-through">Chess</span> Code speaks for itself"
-          </q>
-          <figcaption>
-            &mdash;<cite>Hans Niemann</cite>
-          </figcaption>
-        </figure>
+        <h2 className="dark:peer-hover:text-glow mb-2 text-2xl italic">
+          Fullstack Web Developer
+        </h2>
+        <q className="dark:peer-hover:text-glow">
+          <span className="line-through">Chess</span> Code speaks for itself
+        </q>
+        <cite className="dark:peer-hover:text-glow">&mdash;Hans Niemann</cite>
       </article>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="md:max-w-[60vw]"
           src={discordDemo}
@@ -60,7 +58,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="md:max-w-[60vw]"
           src={waldoDemo}
@@ -73,7 +71,7 @@ export default function Home() {
           <em className="underline">Technologies Used</em>
           <ul>
             <li>Multiple Maps</li>
-            <li>HighScore LeaderBoards For Each Map</li>
+            <li>Highscore Leaderboards</li>
             <li>Timer</li>
             <li>Mobile Supported Carousel</li>
             <li>Cheat Option</li>
@@ -86,7 +84,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="md:max-w-[60vw]"
           src={shoppingDemo}
@@ -113,7 +111,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="md:max-w-[60vw]"
           src={battleshipDemo}
@@ -136,7 +134,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section className="items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 md:text-xl">
         <Image
           className="outline outline-1 outline-white md:max-w-[60vw]"
           src={battleshipDemo}

@@ -34,9 +34,19 @@
     animation: gradient 5s linear infinite;
   }
 
-  .clamp-name {
-    font-size: clamp(3rem, 6vw, 10rem);
+  .clamp-text {
+    font-size: clamp(2.75rem, 6vw, 10rem);
     line-height: 1;
+  }
+
+  .text-glow {
+    color: #fff;
+    text-shadow: 0 0 8px #fff;
+  }
+
+  .text-drop-shadow {
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.1))
+      drop-shadow(0 4px 3px rgb(0 0 0 / 0.2));
   }
 }
 
@@ -49,16 +59,5 @@
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@keyframes expand {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    width: fit-content;
   }
 }
