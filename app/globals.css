@@ -45,8 +45,23 @@
   }
 
   .text-drop-shadow {
-    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.1))
-      drop-shadow(0 4px 3px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.15))
+      drop-shadow(0 4px 3px rgb(0 0 0 / 0.3));
+  }
+
+  .gradient-border {
+    background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+      radial-gradient(
+          circle,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        )
+        border-box;
+  }
+
+  .bg-gradient-star {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
 }
 
