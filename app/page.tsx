@@ -1,16 +1,24 @@
 import "./globals.css"
 import Image from "next/image"
-import discordDemo from "../public/discord-clone-demo.webp"
-import waldoDemo from "../public/waldo-demo.webp"
-import shoppingDemo from "../public/shopping-cart-demo.webp"
-import battleshipDemo from "../public/battleship-demo.webp"
+// import discordDemo from "../public/discord-clone-demo.webp"
+// import waldoDemo from "../public/waldo-demo.webp"
+// import shoppingDemo from "../public/shopping-cart-demo.webp"
+// import battleshipDemo from "../public/battleship-demo.webp"
+// import portfolioDemo from "../public/portfolio-demo.webp"
+import discordDemo from "../public/portfolio-demo.webp"
+import waldoDemo from "../public/portfolio-demo.webp"
+import shoppingDemo from "../public/portfolio-demo.webp"
+import battleshipDemo from "../public/portfolio-demo.webp"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
 import { Stars } from "./(components)/Animations"
 
 export default function Home() {
   return (
-    <main id="hero-container" className="flex flex-col">
+    <main
+      id="hero-container"
+      className="flex flex-col overflow-hidden px-2 md:px-5"
+    >
       <Stars />
       <article className="text-drop-shadow grid min-h-screen place-content-center text-center text-neutral-500">
         <h1 className="clamp-text dark:hover:text-glow group peer flex justify-center gap-[1.5vw]">
@@ -30,18 +38,20 @@ export default function Home() {
       </article>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
         <Image
-          className="md:max-w-[60vw]"
+          className="rounded-xl md:max-w-[60vw]"
           src={discordDemo}
           alt="discord-demo"
           placeholder="blur"
         />
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
-          <b className="col-span-2 text-center xl:text-3xl">Discord Clone</b>
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            Discord Clone
+          </b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
             <li>-Authentication</li>
-            <li>-Message Post/Edit/Delete</li>
+            <li>-CRUD App</li>
             <li>-User Profile Picture Change</li>
             <li>-Infinite Scroll</li>
             <li>-Real Time Update</li>
@@ -58,13 +68,15 @@ export default function Home() {
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
         <Image
-          className="md:max-w-[60vw]"
+          className="rounded-xl md:max-w-[60vw]"
           src={waldoDemo}
           alt="waldo-demo"
           placeholder="blur"
         />
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
-          <b className="col-span-2 text-center xl:text-3xl">Where's Waldo</b>
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            Where's Waldo
+          </b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
@@ -84,18 +96,20 @@ export default function Home() {
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
         <Image
-          className="md:max-w-[60vw]"
+          className="rounded-xl md:max-w-[60vw]"
           src={shoppingDemo}
           alt="shopping-demo"
           placeholder="blur"
         />
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
-          <b className="col-span-2 text-center xl:text-3xl">Shopping Cart</b>
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            Shopping Cart
+          </b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
             <li>-Get Products From API</li>
-            <li>-Add Products To Cart</li>
+            <li>-Transition Animations</li>
             <li>-Multiple Pages</li>
             <li>-Cart Checkout Modal</li>
             <li>-Modern Ecommerce Design</li>
@@ -111,13 +125,15 @@ export default function Home() {
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
         <Image
-          className="md:max-w-[60vw]"
+          className="rounded-xl md:max-w-[60vw]"
           src={battleshipDemo}
           alt="battleship-demo"
           placeholder="blur"
         />
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
-          <b className="col-span-2 text-center xl:text-3xl">Discord Clone</b>
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            BattleShip
+          </b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
@@ -134,18 +150,20 @@ export default function Home() {
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
         <Image
-          className="md:max-w-[60vw]"
+          className="rounded-xl md:max-w-[60vw]"
           src={portfolioDemo}
           alt="portfolio-demo"
           placeholder="blur"
         />
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
-          <b className="col-span-2 text-center xl:text-3xl">This Website</b>
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            This Website
+          </b>
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
             <li>-Fully Responsive Design</li>
-            <li>-Vanilla CSS Animations</li>
+            <li>-CSS Animations</li>
             <li>-Blog Page</li>
             <li>-Dark Mode Toggle</li>
             <li>-Optimized Media Assets</li>

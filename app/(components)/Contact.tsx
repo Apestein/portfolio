@@ -32,7 +32,7 @@ export default function Contact() {
         <FaEnvelope className="text-3xl" />
       </i>
       <form
-        className="flex w-1/2 flex-col gap-3 self-center dark:text-black "
+        className="flex w-3/4 flex-col gap-3 self-center dark:text-black md:w-1/2 "
         ref={form}
         onSubmit={sendEmail}
       >
@@ -56,7 +56,7 @@ export default function Contact() {
           name="message"
           placeholder="Send me an email by writing your message here"
         />
-        <button className="active:gradient-border group w-24 rounded-md border  border-transparent bg-neutral-700 p-1 text-xl font-bold text-white">
+        <button className="active:gradient-border group w-24 rounded-md border  border-transparent bg-neutral-700 p-1 text-base font-bold text-white md:text-xl">
           <span className="hover:rainbow-text">Send</span>
         </button>
       </form>

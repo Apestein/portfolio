@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { DarkModeSwitch } from "react-toggle-dark-mode"
 import { FaGithub } from "react-icons/fa"
 
@@ -11,6 +11,15 @@ export default function RootLayout({
 }) {
   const [darkMode, setDarkMode] = useState(true)
   const darkClass = darkMode ? "dark" : ""
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) =>
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+      })
+    )
+    const listElements = document.querySelectorAll("li")
+    listElements.forEach((el) => observer.observe(el))
+  }, [])
   return (
     <html className={`${darkClass}`}>
       <head />
@@ -19,7 +28,7 @@ export default function RootLayout({
           <DarkModeSwitch
             checked={darkMode}
             onChange={() => setDarkMode((prev) => !prev)}
-            className="h-8 w-8"
+            className="h-6 w-6 md:h-8 md:w-8"
           />
           <Link href="/">
             <span className="rainbow-text">Home</span>
