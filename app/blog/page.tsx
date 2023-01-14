@@ -1,8 +1,10 @@
 import Link from "next/link"
+import { Stars } from "../(components)/Animations"
 
 export default function Blog() {
   return (
-    <main className="min-h-screen px-3 pt-10">
+    <main className="min-h-screen overflow-hidden px-3 pt-16">
+      <Stars />
       <Post title="First Blog" description="My First Blog" />
       <Post title="Second Blog" description="My Second Blog" />
     </main>
