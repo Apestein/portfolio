@@ -1,24 +1,12 @@
 import "./globals.css"
 import Image from "next/image"
-// import discordDemo from "../public/discord-clone-demo.webp"
-// import waldoDemo from "../public/waldo-demo.webp"
-// import shoppingDemo from "../public/shopping-cart-demo.webp"
-// import battleshipDemo from "../public/battleship-demo.webp"
-// import portfolioDemo from "../public/portfolio-demo.webp"
-import discordDemo from "../public/portfolio-demo.webp"
-import waldoDemo from "../public/portfolio-demo.webp"
-import shoppingDemo from "../public/portfolio-demo.webp"
-import battleshipDemo from "../public/portfolio-demo.webp"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
 import { Stars } from "./(components)/Animations"
 
 export default function Home() {
   return (
-    <main
-      id="hero-container"
-      className="flex flex-col overflow-hidden px-2 md:px-5"
-    >
+    <main className="flex flex-col overflow-hidden px-2 md:px-5">
       <Stars />
       <article className="text-drop-shadow grid min-h-screen place-content-center text-center text-neutral-500">
         <h1 className="clamp-text dark:hover:text-glow group peer flex justify-center gap-[1.5vw]">
@@ -37,12 +25,10 @@ export default function Home() {
         <cite className="dark:peer-hover:text-glow">&mdash;Hans Niemann</cite>
       </article>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
-        <Image
-          className="rounded-xl md:max-w-[60vw]"
-          src={discordDemo}
-          alt="discord-demo"
-          placeholder="blur"
-        />
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="discord-demo.webm" type="video/webm" />
+          <source src="discord-demo.mp4" type="video/mp4" />
+        </video>
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
             Discord Clone
@@ -67,12 +53,10 @@ export default function Home() {
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
-        <Image
-          className="rounded-xl md:max-w-[60vw]"
-          src={waldoDemo}
-          alt="waldo-demo"
-          placeholder="blur"
-        />
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="waldo-demo.webm" type="video/webm" />
+          <source src="waldo-demo.mp4" type="video/mp4" />
+        </video>
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
             Where's Waldo
@@ -95,12 +79,10 @@ export default function Home() {
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
-        <Image
-          className="rounded-xl md:max-w-[60vw]"
-          src={shoppingDemo}
-          alt="shopping-demo"
-          placeholder="blur"
-        />
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="shopping-demo.webm" type="video/webm" />
+          <source src="shopping-demo.mp4" type="video/mp4" />
+        </video>
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
             Shopping Cart
@@ -124,12 +106,10 @@ export default function Home() {
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
-        <Image
-          className="rounded-xl md:max-w-[60vw]"
-          src={battleshipDemo}
-          alt="battleship-demo"
-          placeholder="blur"
-        />
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="battleship-demo.webm" type="video/webm" />
+          <source src="battleship-demo.mp4" type="video/mp4" />
+        </video>
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
             BattleShip

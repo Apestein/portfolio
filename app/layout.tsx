@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import React, { useEffect, useState } from "react"
 import { DarkModeSwitch } from "react-toggle-dark-mode"
 import { FaGithub } from "react-icons/fa"
@@ -11,19 +12,24 @@ export default function RootLayout({
 }) {
   const [darkMode, setDarkMode] = useState(true)
   const darkClass = darkMode ? "dark" : ""
+  const pathname = usePathname()
   useEffect(() => {
+    window.scroll(0, 0)
+
+    const listElements = document.querySelectorAll("li")
+    if (!listElements.length) return
     const observer = new IntersectionObserver((entries) =>
       entries.forEach((entry) => {
         entry.target.classList.toggle("show", entry.isIntersecting)
       })
     )
-    const listElements = document.querySelectorAll("li")
     listElements.forEach((el) => observer.observe(el))
-  }, [])
+    return () => observer.disconnect()
+  }, [pathname])
   return (
     <html className={`${darkClass}`}>
       <head />
-      <body className="dark:bg-gradient-star grid min-h-screen grid-rows-[min-content_1fr] font-mono dark:text-white">
+      <body className="dark:bg-gradient-star font-mono dark:text-white">
         <nav className="fixed z-10 flex w-full items-center justify-end gap-[5vw] px-10 pt-4 md:text-2xl">
           <DarkModeSwitch
             checked={darkMode}
@@ -31,10 +37,12 @@ export default function RootLayout({
             className="h-6 w-6 md:h-8 md:w-8"
           />
           <Link href="/">
-            <span className="rainbow-text">Home</span>
+            {/* <span className="rainbow-text">Home</span> */}
+            Home
           </Link>
           <Link href="/blog">
-            <span className="rainbow-text">Blog</span>
+            {/* <span className="rainbow-text">Blog</span> */}
+            Blog
           </Link>
         </nav>
         {children}
