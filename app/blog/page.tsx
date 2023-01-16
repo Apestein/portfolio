@@ -1,20 +1,33 @@
 import Link from "next/link"
 import { Stars } from "../(components)/Animations"
+import PocketBase from "pocketbase"
 
-export default function Blog() {
+async function getPosts() {
+  const pb = new PocketBase("http://127.0.0.1:8090")
+  const records = await pb.collection("posts").getFullList(200, {
+    sort: "-created",
+  })
+  console.log(records)
+  return records
+}
+
+export default async function Blog() {
+  const posts = await getPosts()
   return (
     <main className="min-h-screen overflow-hidden px-3 pt-16">
       <Stars />
-      <Post title="First Blog" description="My First Blog" />
-      <Post title="Second Blog" description="My Second Blog" />
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
+      ))}
     </main>
   )
 }
 
-function Post({ title, description, id }: any) {
+function Post({ post }: any) {
+  const { id, title, description } = post
   return (
-    <Link href={`/blog/${title.split(" ").join("")}`}>
-      <article className="mb-5 p-3 outline outline-1 outline-white">
+    <Link href={`/blog/${id}`}>
+      <article className="mb-5 rounded-xl p-3 shadow-xl outline outline-1 outline-neutral-500">
         <h3 className="text-xl font-bold">{title}</h3>
         <p>{description}</p>
       </article>
