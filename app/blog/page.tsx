@@ -7,7 +7,6 @@ async function getPosts() {
   const records = await pb.collection("posts").getFullList(200, {
     sort: "-created",
   })
-  console.log(records)
   return records
 }
 
@@ -27,7 +26,7 @@ function Post({ post }: any) {
   const { id, title, description } = post
   return (
     <Link href={`/blog/${id}`}>
-      <article className="mb-5 rounded-xl p-3 shadow-xl outline outline-1 outline-neutral-500">
+      <article className="mb-5 rounded-xl p-3 shadow-2xl outline outline-1 outline-neutral-500">
         <h3 className="text-xl font-bold">{title}</h3>
         <p>{description}</p>
       </article>
