@@ -2,12 +2,10 @@ import "./globals.css"
 import Image from "next/image"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
-import { Stars } from "./(components)/Animations"
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-hidden px-2 md:px-5">
-      <Stars />
+    <>
       <article className="text-drop-shadow grid min-h-screen place-content-center text-center text-neutral-500">
         <h1 className="clamp-text dark:hover:text-glow group peer flex justify-center gap-[1.5vw]">
           <p>LUC </p>
@@ -158,6 +156,6 @@ export default function Home() {
         </aside>
       </section>
       <Contact />
-    </main>
+    </>
   )
 }

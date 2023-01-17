@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import React, { useEffect, useState } from "react"
 import { DarkModeSwitch } from "react-toggle-dark-mode"
 import { FaGithub } from "react-icons/fa"
+import { Stars } from "./(components)/Animations"
 
 export default function RootLayout({
   children,
@@ -43,7 +44,10 @@ export default function RootLayout({
             <span className="rainbow-text">Blog</span>
           </Link>
         </nav>
-        {children}
+        <main className="flex flex-col overflow-hidden px-2 md:px-5">
+          <Stars />
+          {children}
+        </main>
         <footer>
           Copyright © 2023 Apestein
           <FaGithub

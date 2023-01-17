@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Stars } from "../(components)/Animations"
 import PocketBase from "pocketbase"
+
+export const revalidate = 60
 
 async function getPosts() {
   const pb = new PocketBase("http://127.0.0.1:8090")
@@ -13,23 +13,26 @@ async function getPosts() {
 export default async function Blog() {
   const posts = await getPosts()
   return (
-    <main className="min-h-screen overflow-hidden px-3 pt-16">
-      <Stars />
+    <section className="min-h-screen pt-16">
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
-    </main>
+    </section>
   )
 }
 
 function Post({ post }: any) {
-  const { id, title, description } = post
+  const { title, description } = post
   return (
-    <Link href={`/blog/${id}`}>
+    <a
+      href="https://www.freecodecamp.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <article className="mb-5 rounded-xl p-3 shadow-2xl outline outline-1 outline-neutral-500">
         <h3 className="text-xl font-bold">{title}</h3>
         <p>{description}</p>
       </article>
-    </Link>
+    </a>
   )
 }

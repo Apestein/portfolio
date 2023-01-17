@@ -2,11 +2,18 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import Lottie, { useLottie } from "lottie-react"
+import emailLottie from "../../public/email.json"
 
 export default function Contact() {
+  const lottie = useRef<any>()
   const form = useRef<any>()
-  const sendEmail = (e: any) => {
+  function sendEmail(e: any) {
     e.preventDefault()
+    document.getElementById("lottie")?.classList.toggle("hidden")
+    lottie.current.goToAndPlay(0, true)
+    form.current.reset()
+
     emailjs
       .sendForm(
         "service_usopb14",
@@ -24,12 +31,36 @@ export default function Contact() {
       )
   }
 
+  function hideLottie() {
+    document.getElementById("lottie")?.classList.toggle("hidden")
+  }
+
+  function copyEmailToClipBoard() {
+    navigator.clipboard.writeText("lucledo@protonmail.com")
+    alert("Copied email to clipboard: lucledo@protonmail.com")
+  }
+
   return (
     <section className="my-10 flex items-center justify-around text-sm md:text-base">
+      <Lottie
+        className="fixed top-1/2 left-1/2 hidden h-auto w-1/2 -translate-y-1/2 -translate-x-1/2"
+        id="lottie"
+        lottieRef={lottie}
+        animationData={emailLottie}
+        autoplay={false}
+        loop={false}
+        onComplete={hideLottie}
+      />
       <i className="flex flex-col gap-5">
-        <FaLinkedin className="text-3xl" />
-        <FaGithub className="text-3xl" />
-        <FaEnvelope className="text-3xl" />
+        <FaLinkedin className="cursor-pointer text-3xl" />
+        <FaGithub
+          className="cursor-pointer text-3xl"
+          onClick={() => window.open("https://github.com/Apestein", "_blank")}
+        />
+        <FaEnvelope
+          className="cursor-pointer text-3xl"
+          onClick={copyEmailToClipBoard}
+        />
       </i>
       <form
         className="flex w-3/4 flex-col gap-3 self-center dark:text-black md:w-1/2 "
