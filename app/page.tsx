@@ -1,5 +1,3 @@
-import Image from "next/image"
-import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"
 
 export default function Home() {
@@ -8,8 +6,8 @@ export default function Home() {
       <article className="text-drop-shadow grid min-h-screen place-content-center text-center text-neutral-500">
         <h1 className="clamp-text dark:hover:text-glow group peer flex justify-center gap-[1.5vw]">
           <p>LUC </p>
-          <p className="w-0 overflow-hidden italic opacity-0 transition-all duration-500 sm:group-hover:w-[13ch] sm:group-hover:opacity-100">
-            "DUMBFOUNDED"
+          <p className="w-0 overflow-hidden italic opacity-0 transition-all duration-500 sm:group-hover:w-[10ch] sm:group-hover:opacity-100">
+            "APESTEIN"
           </p>
           <p>LEDO</p>
         </h1>
@@ -126,12 +124,10 @@ export default function Home() {
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
-        <Image
-          className="rounded-xl md:max-w-[60vw]"
-          src={portfolioDemo}
-          alt="portfolio-demo"
-          placeholder="blur"
-        />
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="portfolio-demo.webm" type="video/webm" />
+          <source src="portfolio-demo.mp4" type="video/mp4" />
+        </video>
         <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
           <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
             This Website

@@ -1,20 +1,36 @@
-import PocketBase from "pocketbase"
+import { initializeApp } from "firebase/app"
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite"
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA7HiQuPsFD7tmDyErHCkQlOSXkowiDJ30",
+  authDomain: "portfolio-29949.firebaseapp.com",
+  projectId: "portfolio-29949",
+  storageBucket: "portfolio-29949.appspot.com",
+  messagingSenderId: "680021598475",
+  appId: "1:680021598475:web:535d4852f14c1a2c2f020e",
+  measurementId: "G-EKTBSG7SBS",
+}
+const app = initializeApp(firebaseConfig)
+const db = getFirestore(app)
 
 export const revalidate = 60
 
 async function getPosts() {
-  const pb = new PocketBase("http://127.0.0.1:8090")
-  const records = await pb.collection("posts").getFullList(200, {
-    sort: "-created",
-  })
-  return records
+  try {
+    const posts: any[] = []
+    const querySnapshot = await getDocs(collection(db, "posts"))
+    querySnapshot.forEach((doc) => posts.push(doc.data()))
+    return posts
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 export default async function Blog() {
   const posts = await getPosts()
   return (
     <section className="min-h-screen pt-16">
-      {posts.map((post) => (
+      {posts?.map((post) => (
         <Post key={post.id} post={post} />
       ))}
     </section>

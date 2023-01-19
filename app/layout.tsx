@@ -20,7 +20,7 @@ export default function RootLayout({
     if (!listElements.length) return
     const observer = new IntersectionObserver((entries) =>
       entries.forEach((entry) => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) entry.target.classList.add("show")
       })
     )
     listElements.forEach((el) => observer.observe(el))
