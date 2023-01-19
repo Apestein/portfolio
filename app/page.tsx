@@ -1,4 +1,3 @@
-import "./globals.css"
 import Image from "next/image"
 import portfolioDemo from "../public/portfolio-demo.webp"
 import Contact from "./(components)/Contact"

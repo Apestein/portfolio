@@ -22,13 +22,9 @@ export default async function Blog() {
 }
 
 function Post({ post }: any) {
-  const { title, description } = post
+  const { title, description, link } = post
   return (
-    <a
-      href="https://www.freecodecamp.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={link} target="_blank" rel="noopener noreferrer">
       <article className="mb-5 rounded-xl p-3 shadow-2xl outline outline-1 outline-neutral-500">
         <h3 className="text-xl font-bold">{title}</h3>
         <p>{description}</p>

@@ -2,7 +2,7 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
-import Lottie, { useLottie } from "lottie-react"
+import Lottie from "lottie-react"
 import emailLottie from "../../public/email.json"
 
 export default function Contact() {
@@ -52,7 +52,15 @@ export default function Contact() {
         onComplete={hideLottie}
       />
       <i className="flex flex-col gap-5">
-        <FaLinkedin className="cursor-pointer text-3xl" />
+        <FaLinkedin
+          className="cursor-pointer text-3xl"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/luc-ledo-616352262",
+              "_blank"
+            )
+          }
+        />
         <FaGithub
           className="cursor-pointer text-3xl"
           onClick={() => window.open("https://github.com/Apestein", "_blank")}

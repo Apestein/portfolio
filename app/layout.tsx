@@ -1,4 +1,5 @@
 "use client"
+import "./globals.css"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React, { useEffect, useState } from "react"
@@ -15,8 +16,6 @@ export default function RootLayout({
   const darkClass = darkMode ? "dark" : ""
   const pathname = usePathname()
   useEffect(() => {
-    window.scroll(0, 0)
-
     const listElements = document.querySelectorAll("li")
     if (!listElements.length) return
     const observer = new IntersectionObserver((entries) =>
@@ -28,7 +27,7 @@ export default function RootLayout({
     return () => observer.disconnect()
   }, [pathname])
   return (
-    <html className={`${darkClass}`}>
+    <html lang="en" className={`${darkClass}`}>
       <head />
       <body className="dark:bg-gradient-star font-mono dark:text-white">
         <nav className="fixed z-10 flex w-full items-center justify-end gap-[5vw] px-10 pt-4 md:text-2xl">
