@@ -143,10 +143,10 @@ export default function Home() {
           </ul>
           <ul>
             <li>-NextJS 13</li>
-            <li>-TurboPack</li>
+            <li>Firebase</li>
+            <li>-SSG/SSR/ISR</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
-            <li>-Vitest Testing</li>
           </ul>
         </aside>
       </section>
