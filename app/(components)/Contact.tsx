@@ -12,7 +12,6 @@ export default function Contact() {
     e.preventDefault()
     document.getElementById("lottie")?.classList.toggle("hidden")
     lottie.current.goToAndPlay(0, true)
-    form.current.reset()
 
     emailjs
       .sendForm(
@@ -29,6 +28,7 @@ export default function Contact() {
           console.log(error.text)
         }
       )
+    form.current.reset()
   }
 
   function hideLottie() {
