@@ -37,10 +37,10 @@ export default function RootLayout({
             className="h-6 w-6 md:h-8 md:w-8"
           />
           <Link href="/">
-            <span className="rainbow-text">Home</span>
+            <span className="hover:rainbow-text">Home</span>
           </Link>
           <Link href="/blog">
-            <span className="rainbow-text">Blog</span>
+            <span className="hover:rainbow-text">Blog</span>
           </Link>
         </nav>
         <main className="flex flex-col overflow-hidden px-2 md:px-5">

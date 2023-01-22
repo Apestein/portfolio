@@ -28,7 +28,7 @@
 }
 
 @layer utilities {
-  .rainbow-text:hover {
+  .rainbow-text {
     background: radial-gradient(
       circle,
       rgba(131, 58, 180, 1) 0%,
@@ -52,8 +52,8 @@
   }
 
   .text-drop-shadow {
-    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.15))
-      drop-shadow(0 4px 3px rgb(0 0 0 / 0.3));
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.2))
+      drop-shadow(0 4px 3px rgb(0 0 0 / 0.4));
   }
 
   .gradient-border {
@@ -75,6 +75,10 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+  }
+
+  .box-shadow {
+    box-shadow: 4px 4px 8px black;
   }
 }
 

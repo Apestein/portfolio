@@ -95,8 +95,8 @@ export default function Contact() {
           name="message"
           placeholder="Send me an email by writing your message here"
         />
-        <button className="active:gradient-border group w-24 rounded-md border  border-transparent bg-neutral-700 p-1 text-base font-bold text-white md:text-xl">
-          <span className="hover:rainbow-text">Send</span>
+        <button className="active:gradient-border group w-24 rounded-md border border-transparent bg-neutral-700 p-1 text-base font-bold text-white md:text-xl">
+          <span className="group-hover:rainbow-text">Send</span>
         </button>
       </form>
     </section>

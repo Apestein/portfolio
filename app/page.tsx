@@ -45,6 +45,24 @@ export default function Home() {
             <li>-Typescript</li>
             <li>-Tailwind</li>
           </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/discord-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://discord-clone-40fc6.firebaseapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
@@ -64,6 +82,7 @@ export default function Home() {
             <li>-Timer</li>
             <li>-Mobile Supported Carousel</li>
             <li>-Cheat Option</li>
+            <li>-Fully Responsive Design</li>
           </ul>
           <ul>
             <li>-Jest/React Testing Library</li>
@@ -71,6 +90,24 @@ export default function Home() {
             <li>-Typescript</li>
             <li>-Styled Components</li>
           </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/where-is-waldo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://apestein.github.io/where-is-waldo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
@@ -98,6 +135,24 @@ export default function Home() {
             <li>-Styled Components</li>
             <li>-Figma</li>
           </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/shopping-cart"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://apestein.github.io/shopping-cart"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
@@ -115,12 +170,30 @@ export default function Home() {
             <li>-Drag and Drop Ships</li>
             <li>-Rotate Ships</li>
             <li>-Randomize Ship Placement</li>
-            <li>-Random AI play</li>
+            <li>-Random AI Play</li>
           </ul>
           <ul>
             <li>-Vanilla Javascript</li>
             <li>-Jest Testing</li>
           </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/Battleship"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://apestein.github.io/Battleship/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
         </aside>
       </section>
       <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
@@ -136,18 +209,38 @@ export default function Home() {
           <em className="underline">Technologies Used</em>
           <ul>
             <li>-Fully Responsive Design</li>
-            <li>-CSS Animations</li>
-            <li>-Blog Page</li>
+            <li>-Vanilla CSS Animations</li>
+            <li>-Send Email</li>
             <li>-Dark Mode Toggle</li>
-            <li>-Optimized Media Assets</li>
+            <li>-Blog Page</li>
+            <li>Perfect Lighthouse Score</li>
           </ul>
           <ul>
             <li>-NextJS 13</li>
             <li>Firebase</li>
+            <li>EmailJS</li>
             <li>-SSG/SSR/ISR</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
           </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://portfolio-apestein.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
         </aside>
       </section>
       <Contact />
