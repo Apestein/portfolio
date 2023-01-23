@@ -16,7 +16,7 @@ export default function RootLayout({
   const darkClass = darkMode ? "dark" : ""
   const pathname = usePathname()
   useEffect(() => {
-    const listElements = document.querySelectorAll("li")
+    const listElements = document.querySelectorAll("li, .no-show")
     if (!listElements.length) return
     const observer = new IntersectionObserver((entries) =>
       entries.forEach((entry) => {

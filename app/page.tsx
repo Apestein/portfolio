@@ -50,7 +50,7 @@ export default function Home() {
               href="https://github.com/Apestein/discord-clone"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Repo</span>
             </a>
@@ -58,7 +58,7 @@ export default function Home() {
               href="https://discord-clone-40fc6.firebaseapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Live</span>
             </a>
@@ -95,7 +95,7 @@ export default function Home() {
               href="https://github.com/Apestein/where-is-waldo"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Repo</span>
             </a>
@@ -103,7 +103,7 @@ export default function Home() {
               href="https://apestein.github.io/where-is-waldo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Live</span>
             </a>
@@ -140,7 +140,7 @@ export default function Home() {
               href="https://github.com/Apestein/shopping-cart"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Repo</span>
             </a>
@@ -148,7 +148,7 @@ export default function Home() {
               href="https://apestein.github.io/shopping-cart"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Live</span>
             </a>
@@ -181,7 +181,7 @@ export default function Home() {
               href="https://github.com/Apestein/Battleship"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Repo</span>
             </a>
@@ -189,7 +189,7 @@ export default function Home() {
               href="https://apestein.github.io/Battleship/"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Live</span>
             </a>
@@ -228,17 +228,9 @@ export default function Home() {
               href="https://github.com/Apestein/portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+              className="active:gradient-border box-shadow no-show group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
             >
               <span className="group-hover:rainbow-text">Repo</span>
-            </a>
-            <a
-              href="https://portfolio-apestein.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
-            >
-              <span className="group-hover:rainbow-text">Live</span>
             </a>
           </div>
         </aside>

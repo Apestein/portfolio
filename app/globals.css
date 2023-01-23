@@ -71,6 +71,13 @@
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
 
+  .no-show {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
   .show {
     opacity: 1;
     filter: blur(0);
