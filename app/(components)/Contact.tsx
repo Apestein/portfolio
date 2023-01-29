@@ -55,10 +55,7 @@ export default function Contact() {
         <FaLinkedin
           className="cursor-pointer text-3xl"
           onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/luc-ledo-616352262",
-              "_blank"
-            )
+            window.open("https://www.linkedin.com/in/luc-ledo", "_blank")
           }
         />
         <FaGithub
