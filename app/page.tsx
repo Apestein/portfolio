@@ -213,12 +213,12 @@ export default function Home() {
             <li>-Send Email</li>
             <li>-Dark Mode Toggle</li>
             <li>-Blog Page</li>
-            <li>Perfect Lighthouse Score</li>
+            <li>-Perfect Lighthouse Score</li>
           </ul>
           <ul>
             <li>-NextJS 13</li>
-            <li>Firebase</li>
-            <li>EmailJS</li>
+            <li>-Firebase</li>
+            <li>-EmailJS</li>
             <li>-SSG/SSR/ISR</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
