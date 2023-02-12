@@ -14,18 +14,18 @@ export default function RootLayout({
 }) {
   const [darkMode, setDarkMode] = useState(true)
   const darkClass = darkMode ? "dark" : ""
-  const pathname = usePathname()
-  useEffect(() => {
-    const listElements = document.querySelectorAll("li, .no-show")
-    if (!listElements.length) return
-    const observer = new IntersectionObserver((entries) =>
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("show")
-      })
-    )
-    listElements.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [pathname])
+  // const pathname = usePathname()
+  // useEffect(() => {
+  //   const listElements = document.querySelectorAll("li, .no-show")
+  //   if (!listElements.length) return
+  //   const observer = new IntersectionObserver((entries) =>
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) entry.target.classList.add("show")
+  //     })
+  //   )
+  //   listElements.forEach((el) => observer.observe(el))
+  //   return () => observer.disconnect()
+  // }, [pathname])
   return (
     <html lang="en" className={`${darkClass}`}>
       <head />

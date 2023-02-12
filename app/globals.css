@@ -19,12 +19,12 @@
     animation: gradient 10s linear infinite;
   }
 
-  li {
+  /* li {
     opacity: 0;
     filter: blur(4px);
     transform: translateX(100%);
     transition: all 1s;
-  }
+  } */
 }
 
 @layer utilities {
@@ -71,7 +71,7 @@
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
 
-  .no-show {
+  /* .no-show {
     opacity: 0;
     filter: blur(4px);
     transform: translateX(100%);
@@ -82,7 +82,7 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-  }
+  } */
 
   .box-shadow {
     box-shadow: 4px 4px 8px black;

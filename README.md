@@ -12,14 +12,12 @@ _Features:_
 _Technologies Used:_
 
 - NextJS 13
-- Firebase
-- EmailJS
-- SSG/SSR/ISR
+- Server Components
 - Typescript
 - Tailwind
+- Firebase
+- EmailJS
 
 ![Screenshot from 2023-01-20 18-03-30](https://user-images.githubusercontent.com/107362680/213820577-72ad2154-4405-42a3-8b34-3584ddf7f0bd.png)
 
-
 https://user-images.githubusercontent.com/107362680/213909795-182eda19-5b48-4343-98de-347cf1ba2a5b.mp4
-
