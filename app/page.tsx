@@ -31,10 +31,10 @@ export default function Home() {
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
-            <li>-Real Time Update</li>
+            <li>-Real Time App</li>
             <li>-CRUD App</li>
-            <li>-Authentication</li>
-            <li>-Update User Picture</li>
+            <li>-User Authentication</li>
+            <li>-Update Profile Picture</li>
             <li>-Infinite Scroll</li>
             <li>-Fully Responsive Design</li>
           </ul>
@@ -56,6 +56,52 @@ export default function Home() {
             </a>
             <a
               href="https://discord-clone-apestein.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Live</span>
+            </a>
+          </div>
+        </aside>
+      </section>
+      <section className="mb-3 items-start text-xs md:flex md:items-center md:gap-4 xl:text-xl">
+        <video autoPlay loop muted className="rounded-xl md:max-w-[60vw]">
+          <source src="clubhouse-demo.webm" type="video/webm" />
+          <source src="clubhouse-demo.mp4" type="video/mp4" />
+        </video>
+        <aside className="grid flex-auto grid-cols-2 place-content-center text-center">
+          <b className="col-span-2 text-center md:mb-3 xl:text-3xl">
+            Dev Clubhouse
+          </b>
+          <em className="underline">Features</em>
+          <em className="underline">Technologies Used</em>
+          <ul>
+            <li>-Real Time App</li>
+            <li>-CRUD App</li>
+            <li>-0Auth Authentication</li>
+            <li>-Protected Pages & API Routes</li>
+            <li>-User Authorization</li>
+            <li>-Fully Responsive Design</li>
+          </ul>
+          <ul>
+            <li>-NextJS 13</li>
+            <li>-NextAuth</li>
+            <li>-MongoDB/Mongoose ORM</li>
+            <li>-Typescript</li>
+            <li>-Tailwind</li>
+          </ul>
+          <div className="col-span-2 mt-5 flex justify-center gap-10">
+            <a
+              href="https://github.com/Apestein/dev-clubhouse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
+            >
+              <span className="group-hover:rainbow-text">Repo</span>
+            </a>
+            <a
+              href="https://dev-clubhouse.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="active:gradient-border box-shadow group rounded-md border border-transparent bg-neutral-700 py-1 px-10 font-bold text-white"
