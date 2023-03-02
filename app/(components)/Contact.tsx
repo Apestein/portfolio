@@ -87,7 +87,7 @@ export default function Contact() {
           placeholder="Email"
         />
         <textarea
-          className="px-2 outline outline-1 outline-black "
+          className="h-24 px-2 outline outline-1 outline-black "
           required
           name="message"
           placeholder="Send me an email by writing your message here"
