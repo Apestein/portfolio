@@ -40,7 +40,7 @@ export default function Home() {
           </ul>
           <ul>
             <li>-Vite & Vitest</li>
-            <li>-Firebase (auth, firestore, storage, and hosting)</li>
+            <li>-Firebase (auth, firestore, storage)</li>
             <li>-React Testing Library</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
@@ -82,14 +82,17 @@ export default function Home() {
             <li>-0Auth Authentication</li>
             <li>-Protected Pages & API Routes</li>
             <li>-User Authorization</li>
+            <li>-Pagination</li>
             <li>-Fully Responsive Design</li>
           </ul>
           <ul>
             <li>-NextJS 13</li>
             <li>-NextAuth</li>
-            <li>-MongoDB/Mongoose ORM</li>
+            <li>-MongoDB/Mongoose</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
+            <li>-SWR</li>
+            <li>-Lottie Files</li>
           </ul>
           <div className="col-span-2 mt-5 flex justify-center gap-10">
             <a
