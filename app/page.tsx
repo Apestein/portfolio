@@ -268,7 +268,7 @@ export default function Home() {
             <li>-Server Components</li>
             <li>-Typescript</li>
             <li>-Tailwind</li>
-            <li>-Firebase</li>
+            <li>-Lottie Files</li>
             <li>-EmailJS</li>
           </ul>
           <div className="col-span-2 mt-5 flex justify-center gap-10">

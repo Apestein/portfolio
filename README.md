@@ -15,7 +15,7 @@ _Technologies Used:_
 - Server Components
 - Typescript
 - Tailwind
-- Firebase
+- Lottie Files
 - EmailJS
 
 ![Screenshot from 2023-01-20 18-03-30](https://user-images.githubusercontent.com/107362680/213820577-72ad2154-4405-42a3-8b34-3584ddf7f0bd.png)
