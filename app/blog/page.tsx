@@ -1,33 +1,21 @@
-import { initializeApp } from "firebase/app"
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite"
-
-const firebaseConfig = {
-  apiKey: "AIzaSyA7HiQuPsFD7tmDyErHCkQlOSXkowiDJ30",
-  authDomain: "portfolio-29949.firebaseapp.com",
-  projectId: "portfolio-29949",
-  storageBucket: "portfolio-29949.appspot.com",
-  messagingSenderId: "680021598475",
-  appId: "1:680021598475:web:535d4852f14c1a2c2f020e",
-  measurementId: "G-EKTBSG7SBS",
-}
-const app = initializeApp(firebaseConfig)
-const db = getFirestore(app)
-
-export const revalidate = 60
-
-async function getPosts() {
-  try {
-    const posts: any[] = []
-    const querySnapshot = await getDocs(collection(db, "posts"))
-    querySnapshot.forEach((doc) => posts.push(doc.data()))
-    return posts
-  } catch (error) {
-    console.log(error)
-  }
-}
+import crypto from "crypto"
 
 export default async function Blog() {
-  const posts = await getPosts()
+  const posts = [
+    {
+      id: crypto.randomUUID(),
+      title: "This Tailwind Twitter Drama Could Have Been Avoided",
+      description: "Did you know about this tailwind class sorting hack?",
+      link: "https://dev.to/apestein/this-tailwind-twitter-drama-could-have-been-avoided-23cb",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Intuitive Vim Keybinding For VScode",
+      description:
+        "Is vim hard to pick up? Well, not anymore with my intuitive keybindings for VScode vim extension.",
+      link: "https://dev.to/apestein/intuitive-vim-keybinding-for-vscode-2ga0",
+    },
+  ]
   return (
     <section className="min-h-screen pt-16">
       {posts?.map((post) => (

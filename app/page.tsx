@@ -31,8 +31,7 @@ export default function Home() {
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
-            <li>-Real Time App</li>
-            <li>-CRUD App</li>
+            <li>-Real Time CRUD App</li>
             <li>-User Authentication</li>
             <li>-Update Profile Picture</li>
             <li>-Infinite Scroll</li>
@@ -77,12 +76,12 @@ export default function Home() {
           <em className="underline">Features</em>
           <em className="underline">Technologies Used</em>
           <ul>
-            <li>-Real Time App</li>
-            <li>-CRUD App</li>
+            <li>-Real Time CRUD App</li>
             <li>-0Auth Authentication</li>
-            <li>-Protected Pages & API Routes</li>
+            <li>-Protected Pages & APIs</li>
             <li>-User Authorization</li>
             <li>-Pagination</li>
+            <li>-Like/Dislike</li>
             <li>-Fully Responsive Design</li>
           </ul>
           <ul>
